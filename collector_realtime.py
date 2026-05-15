@@ -1,12 +1,15 @@
 import requests
 import time
+import os
+from dotenv import load_dotenv
 
 # ===== TELEGRAM CONFIG =====
-BOT_TOKEN = "8631408938:AAECCfuK_g0GqOqzKmsjCFHRIWG928vO5XI"
-CHAT_ID = "6615540935"
+load_dotenv()
+BOT_TOKEN = os.getenv("BOT_TOKEN")
+CHAT_ID = os.getenv("CHAT_ID")
 
 def send_telegram(message: str):
-    url = f"https://api.telegram.org/bot8631408938:AAECCfuK_g0GqOqzKmsjCFHRIWG928vO5XI/sendMessage"
+    url = f"https://api.telegram.org/bot{BOT_TOKEN}/sendMessage"
 
     try:
         requests.post(
