@@ -162,7 +162,7 @@ Back-off pulling image "abc/notexist"
 ## Clone repository
 
 ```bash
-git clone <your-repo>
+git clone https://github.com/quocanh1410/ai-analyzer.git
 cd ai-analyzer
 ```
 
