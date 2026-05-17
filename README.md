@@ -311,6 +311,7 @@ This project aims to demonstrate a lightweight AIOps pipeline for Kubernetes env
 ---
 
 # 👨‍💻 Author
+Quốc Anh ( Alian )
 
 Kubernetes AIOps Research Project
 
